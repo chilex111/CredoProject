@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:background="@color/white"
+    tools:context=".fragment.shoppers.ErrandDetailFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <errand.com.my.credoshopper.views.PoppinsBoldTextView
+            android:id="@+id/textErrandType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pickups_dropoff"
+            android:layout_gravity="center"
+            android:textSize="18sp"/>
+
+        <errand.com.my.credoshopper.views.PoppinsBoldTextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="Errand posted: 2 mins Ago" />
+        <errand.com.my.credoshopper.views.PoppinsTextView
+            android:id="@+id/textUrgency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Please i need this within the next 24 hours" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"/>
+        <errand.com.my.credoshopper.views.PoppinsBoldTextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delivery_address"
+            android:paddingRight="4dp"
+            android:paddingLeft="4dp"
+            android:paddingTop="10dp"
+            android:background="@drawable/rectangle_line_grey"/>
+        <errand.com.my.credoshopper.views.PoppinsTextView
+            android:id="@+id/textAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="1a Hughes Avenue, Alagomeji, Yaba" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"/>
+        <errand.com.my.credoshopper.views.PoppinsBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/transport_fare"
+            android:paddingRight="4dp"
+            android:paddingLeft="4dp"
+            android:paddingTop="10dp"
+            android:layout_gravity="end"
+            android:background="@drawable/rectangle_line_grey"/>
+        <errand.com.my.credoshopper.views.PoppinsTextView
+            android:id="@+id/textT_Fare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2000"
+            android:layout_marginTop="4dp"
+            android:layout_gravity="end"
+            android:drawableLeft="@drawable/ic_nigeria_naira"
+            android:drawableStart="@drawable/ic_nigeria_naira"
+            android:drawablePadding="4dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"/>
+
+        <TableLayout
+            android:id="@+id/tableItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="200dp"
+            android:orientation="vertical">
+
+          <RelativeLayout
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:gravity="end">
+              <errand.com.my.credoshopper.views.PoppinsBoldTextView
+                  android:id="@+id/text"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="14sp"
+                  android:paddingTop="10dp"
+                  android:background="@drawable/rectangle_line_grey"
+                  android:paddingLeft="4dp"
+                  android:paddingRight="4dp"
+                  android:text="@string/budget_amount"/>
+              <errand.com.my.credoshopper.views.PoppinsTextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/textBudget"
+                  android:layout_below="@+id/text"
+                  android:layout_marginTop="4dp"
+                  android:drawableLeft="@drawable/ic_nigeria_naira"
+                  android:drawableStart="@drawable/ic_nigeria_naira"
+                  android:drawablePadding="10dp"
+                  android:hint="@string/budget_amount"
+                  android:inputType="number"/>
+              <View
+                  android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="@color/grey"
+                  android:layout_below="@+id/textBudget"/>
+          </RelativeLayout>
+
+            <TableRow
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <errand.com.my.credoshopper.views.PoppinsBoldTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.4"
+                    android:text="@string/items_list"/>
+                <errand.com.my.credoshopper.views.PoppinsBoldTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:text="@string/amount"
+                    android:drawableStart="@drawable/ic_nigeria_naira"
+                    android:drawableLeft="@drawable/ic_nigeria_naira"
+                    android:padding="4dp"/>
+
+            </TableRow>
+            <TableRow
+                android:orientation="vertical"
+                android:weightSum="2">
+                <errand.com.my.credoshopper.views.PoppinsLightTextView
+                    android:id="@+id/errandList"
+                    android:layout_weight="1.4"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:padding="4dp"
+                    android:text="garri\n rice\n beans"
+                    android:background="@drawable/line_grey"/>
+                <errand.com.my.credoshopper.views.PoppinsLightTextView
+                    android:id="@+id/errandAmt"
+                    android:layout_weight="0.6"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:minHeight="200dp"
+                    android:padding="4dp"
+                    android:text="2000\n 3000\n 4000"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/line_grey"/>
+            </TableRow>
+        </TableLayout>
+        <errand.com.my.credoshopper.views.PoppinsButton
+            android:id="@+id/buttonContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_sender"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:background="@drawable/curve_lighter"
+            android:textColor="@color/trans_red"
+            android:padding="10dp"
+            android:layout_margin="20dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</ScrollView>

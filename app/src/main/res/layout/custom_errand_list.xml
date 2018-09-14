@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/cardView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="6dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/lighter">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="4dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <errand.com.my.credoshopper.views.PoppinsTextView
+                android:id="@+id/textErrandType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/pickups_dropoff" />
+
+            <errand.com.my.credoshopper.views.PoppinsTextView
+                android:id="@+id/posted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:hint="posted: 2 mins ago"/>
+        </RelativeLayout>
+
+        <errand.com.my.credoshopper.views.PoppinsTextView
+            android:id="@+id/textDeliveryLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Delivery to Lagos"
+            android:layout_gravity="end"/>
+
+        <errand.com.my.credoshopper.views.PoppinsTextView
+            android:id="@+id/textUrgency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="24 hrs"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="end">
+            <errand.com.my.credoshopper.views.PoppinsBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/budget_amount"/>
+            <errand.com.my.credoshopper.views.PoppinsTextView
+                android:id="@+id/textBudget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="100,000"
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp"
+                android:drawableLeft="@drawable/ic_nigeria_naira"
+                android:drawableStart="@drawable/ic_nigeria_naira"
+                android:drawablePadding="4dp"/>
+        </LinearLayout>
+
+        <errand.com.my.credoshopper.views.PoppinsBoldTextView
+            android:id="@+id/sender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/app_name"/>
+        <errand.com.my.credoshopper.views.PoppinsBoldTextView
+            android:id="@+id/details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See errand "
+            android:layout_gravity="end"
+            android:textColor="#ebb44d"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

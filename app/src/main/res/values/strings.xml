@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">CredoShopper</string>
+    <string name="log_in">Log In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="full_name">Full name</string>
+    <string name="phone">Phone number</string>
+    <string name="email">Email Address</string>
+    <string name="address">Address</string>
+    <string name="register">Register</string>
+    <string name="password">Password</string>
+    <string name="my_errands">My Errands</string>
+    <string name="shopper">Shopper</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="grocery">Grocery</string>
+    <string name="apparels">Apparels</string>
+    <string name="pickups_dropoff">PickUps/DropOff</string>
+    <string name="laundry_mart">Laundry Mart</string>
+    <string name="select_errand">Select Errand</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="profile">Profile</string>
+    <string name="all_errands">All Errands</string>
+    <string name="home">Home</string>
+    <string name="services">Services</string>
+    <string name="type_of_errand">Type of Errand</string>
+    <string name="delivery_address">Delivery Address</string>
+    <string name="budget_amount">Budget Amount</string>
+    <string name="amount">Amount</string>
+    <string name="items_list">Items List</string>
+    <string name="transport_amount">Transport Amount</string>
+    <string name="urgency">Urgency</string>
+    <string name="send_errand">Send Errand</string>
+    <string name="errand_dev">My Errand page is still under development</string>
+    <string name="partner_dev">Our Partner page is still under development</string>
+    <string name="no_errands">No available errands Yet !!!</string>
+    <string name="transport_fare">Transport Fare</string>
+    <string name="contact_sender">Contact Sender</string>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bck"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.DashBoardActivity">
+<ImageView
+    android:id="@+id/imageGif"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:src="@raw/rider"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toTopOf="@+id/linear"
+    android:contentDescription="@string/app_name" />
+   <!-- <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@color/trans_black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:scaleType="centerCrop"/>-->
+
+  <LinearLayout
+      android:id="@+id/linear"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:layout_margin="50dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent">
+
+      <errand.com.my.credoshopper.views.PoppinsButton
+          android:id="@+id/buttonShopper"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/shopper"
+          android:background="@drawable/curve_red"
+          android:textColor="@color/white"
+          android:textSize="18sp"
+          android:textStyle="bold"
+          android:textAllCaps="false"/>
+      <errand.com.my.credoshopper.views.PoppinsButton
+          android:id="@+id/buttonErrand"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/my_errands"
+          android:background="@drawable/curve_lighter"
+          android:layout_marginTop="10dp"
+          android:textColor="@color/red"
+          android:textAllCaps="false"
+          android:textStyle="bold"
+          android:textSize="18sp"/>
+  </LinearLayout>
+</android.support.constraint.ConstraintLayout>
